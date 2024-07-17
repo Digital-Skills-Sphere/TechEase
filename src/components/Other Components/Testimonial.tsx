@@ -30,8 +30,8 @@ const Testimonial: React.FC<TestimonialProps> = () => {
             onClick={() => handleClick(index)}
             className={`relative flex justify-center items-center duration-300 cursor-pointer rounded-full h-[90px] w-[90px] ${
               index === isTextVisible
-                ? "border-[#edff71] border-[3px]"
-                : "border-[3px] border-[#27363d]"
+                ? "border-secondaryColor border-[3px]"
+                : "border-[3px] border-primaryColor"
             } ${index % 2 === 0 ? "" : "translate-y-[90px]"}`}
           >
             <img
@@ -52,7 +52,7 @@ const Testimonial: React.FC<TestimonialProps> = () => {
             if (isTextVisible > 0) setIsTextVisible(isTextVisible - 1);
           }}
         >
-          {isTextVisible > 0 && <i className="fa-solid fa-arrow-left"></i>}
+          {isTextVisible > 0 && <i className="fa-solid fa-arrow-left text-primaryColor"></i>}
         </div>
 
         <div className="relative flex flex-col justify-center items-center duration-500 w-full h-[30vh]">
@@ -63,7 +63,7 @@ const Testimonial: React.FC<TestimonialProps> = () => {
               }`}
               key={ind}
             >
-              <h2 className="text-[26px] font-bold pb-5 text-[#27363d]">
+              <h2 className="text-[26px] font-bold pb-5 text-primaryColor">
                 {name}
               </h2>
               <p className="leading-[30px] text-center">{text}</p>
@@ -72,7 +72,7 @@ const Testimonial: React.FC<TestimonialProps> = () => {
         </div>
         {isTextVisible < testimonials.length - 1 && (
           <div
-            className="cursor-pointer flex justify-center items-center text-[30px] h-[30px] w-[30px] p-[10px] select-none duration-200 hover:scale-125  absolute -right-10 top-16"
+            className="cursor-pointer flex justify-center items-center text-[30px] h-[30px] w-[30px] p-[10px] select-none duration-200 text-primaryColor hover:scale-125  absolute -right-10 top-16"
             onClick={() => {
               if (isTextVisible < testimonials.length - 1)
                 setIsTextVisible(isTextVisible + 1);

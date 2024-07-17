@@ -31,7 +31,7 @@ const WhatMakesDifferent = () => {
   }, []);
 
   return (
-    <div className="flex flex-col gap-8 px-[50px]">
+    <div className="flex flex-col gap-8 px-[50px]">   
       <DoubleHeading
         subHeading="What makes Us Different"
         heading="IT Solutions"
@@ -52,7 +52,7 @@ const WhatMakesDifferent = () => {
               </p>
               <div className="h-[5px] bg-[#ddd] w-[95%] rounded-[5px] overflow-hidden mt-[5px]">
                 <div
-                  className="h-full bg-secondary rounded-[5px]"
+                  className="h-full bg-secondaryColor rounded-[5px]"
                   style={{
                     width: `${index === activeIndex ? progress + 7 : 0}%`,
                     transition: "width 0.3s",

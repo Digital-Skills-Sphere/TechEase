@@ -1,6 +1,6 @@
 .btn {
   font-size: 17px;
-  background: #072028;
+  background: #000000;
   border: none;
   padding: 1em 1.5em;
   color: #fff;
@@ -9,7 +9,7 @@
   transition: 0.5s ease;
   cursor: pointer;
   width: fit-content;
-  border: 1px solid #072028;
+  border: 1px solid #000000;
   position: relative;
   z-index: 0;
   
@@ -22,7 +22,7 @@
   bottom: 0;
   height: 2px;
   width: 0;
-  background-color: #edff71;
+  background-color: #ffc81a;
   transition: 0.5s ease;
 }
 
@@ -42,7 +42,7 @@
   bottom: 0;
   height: 0;
   width: 100%;
-  background-color: #edff71;
+  background-color: #ffc81a;
   transition: 0.4s ease;
   z-index: -1;
 }

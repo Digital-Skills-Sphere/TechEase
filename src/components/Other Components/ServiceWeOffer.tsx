@@ -16,7 +16,7 @@ type ServiceCardProps = {
 
 const ServiceWeOffer = () => {
   return (
-    <div className="bg-primary text-white flex flex-col gap-8 py-16 px-10">
+    <div className="bg-primaryColor text-white flex flex-col gap-8 py-16 px-10">
       <div className="flex flex-col gap-3 max-w-[650px] mx-auto text-center">
         <h1 className="text-5xl font-bold">
           Your Vision with{" "}
