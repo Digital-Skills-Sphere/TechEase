@@ -1,16 +1,16 @@
-import Logo from "../../assets/logo.webp";
+import Logo from "../../assets/logo.png";
 
 const Navbar = () => {
   return (
-    <nav className="absolute flex justify-between z-20 text-white w-full px-10 py-5">
-      <div className="w-[180px]">
+    <nav className="absolute flex justify-between items-center z-20 text-white w-full px-10">
+      <div className="w-[200px] pt-2">
         <img src={Logo} className="w-full object-contain" alt="" />
       </div>
       <div>
         <svg
           stroke="currentColor"
           fill="currentColor"
-          stroke-width="0"
+          strokeWidth="0"
           viewBox="0 0 512 512"
           height="1.5em"
           width="1.5em"
