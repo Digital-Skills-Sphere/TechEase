@@ -1,5 +1,42 @@
 import IconCloud from "../ui/icon-cloud";
 
-const IconCloudWrapper = () => IconCloud;
+const slugs = [
+    "typescript",
+    "javascript",
+    "dart",
+    "java",
+    "react",
+    "flutter",
+    "android",
+    "html5",
+    "css3",
+    "nodedotjs",
+    "express",
+    "nextdotjs",
+    "prisma",
+    "amazonaws",
+    "postgresql",
+    "firebase",
+    "nginx",
+    "vercel",
+    "testinglibrary",
+    "jest",
+    "cypress",
+    "docker",
+    "git",
+    "jira",
+    "github",
+    "gitlab",
+    "visualstudiocode",
+    "androidstudio",
+    "sonarqube",
+    "figma",
+  ];
+  
+const IconCloudWrapper = () => (
+  <div>
+    <IconCloud iconSlugs={slugs}/>
+  </div>
+);
 
 export default IconCloudWrapper;

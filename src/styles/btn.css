@@ -1,0 +1,54 @@
+.btn {
+  font-size: 17px;
+  background: #072028;
+  border: none;
+  padding: 1em 1.5em;
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  transition: 0.5s ease;
+  cursor: pointer;
+  width: fit-content;
+  border: 1px solid #072028;
+  position: relative;
+  z-index: 0;
+  
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #edff71;
+  transition: 0.5s ease;
+}
+
+.btn:hover {
+  color: #072028;
+  transition-delay: 0.5s;
+}
+
+.btn:hover::before {
+  width: 100%;
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0;
+  width: 100%;
+  background-color: #edff71;
+  transition: 0.4s ease;
+  z-index: -1;
+}
+
+.btn:hover::after {
+  height: 100%;
+  transition-delay: 0.4s;
+  color: aliceblue;
+}
