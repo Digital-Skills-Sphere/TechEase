@@ -15,7 +15,7 @@ const WCU_HOME_Sec: React.FC<WCU_HOME_SecProps> = (props) => {
     return (
         <>
             <div className="flex gap-[20px] justify-center items-center">
-                <div className="rounded-[50%] p-[10px] flex text-center justify-center bg-secondary shadow-custom">
+                <div className="rounded-[50%] p-[10px] flex text-center justify-center bg-secondaryColor shadow-custom">
                     <p className="rounded-[50%] p-[20px] h-[60px] w-[60px] flex text-center justify-center items-center bg-white font-bold">
                         <span>{props.percentage}</span>
                         <span>%</span>

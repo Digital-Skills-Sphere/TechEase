@@ -3,7 +3,7 @@ import logo from "../../assets/logo.webp"
 
 const Footer = () => {
     return (
-        <footer className="flex flex-col justify-center items-center gap-16 bg-primary text-white pt-16">
+        <footer className="flex flex-col justify-center items-center gap-16 bg-primaryColor text-white pt-16">
             <div className="flex gap-12 px-5 w-[90vw] max-[1120px]:gap-6 max-[1120px]:px-3 max-[930px]:flex-col ">
                 <div className="w-[40vw] flex flex-col gap-6 pr-7 py-1 max-[1020px]:pr-2 max-[930px]:border-none">
                     <img className="w-[200px]" src={logo} alt="" />
@@ -19,7 +19,7 @@ const Footer = () => {
                                 width="4"
                                 xmlns="http://www.w3.org/2000/svg"
                                 aria-hidden="true"
-                                className ="w-7 h-7 text-secondary"
+                                className ="w-7 h-7 text-secondaryColor"
                             >
                                 <path
                                     d="M5 7h14M5 12h14M5 17h14"
@@ -106,35 +106,35 @@ const Footer = () => {
                 </div>
                 <div className="flex gap-10 w-[50vw] justify-evenly max-[1120px]:gap-6 max-[930px]:gap-12 max-[500px]:flex-col ">
                     <div className="flex flex-col gap-3">
-                        <h1 className="text-xl font-semibold border-b-[2.5px] pb-1 text-secPrimary w-fit border-secondary max-[500px]:w-fit max-[500px]:text-lg">Quick Links</h1>
+                        <h1 className="text-xl font-semibold border-b-[2.5px] pb-1 text-secondaryColor w-fit border-secondarytext-secondaryColor max-[500px]:w-fit max-[500px]:text-lg">Quick Links</h1>
                         <ul className="flex flex-col gap-2 text-[16px] text-[#eee] max-[500px]:text-[15px]">
-                            <li className="hover:text-secondary duration-200"><Link to="/">Home</Link></li>
-                            <li className="hover:text-secondary duration-200"><Link to="/about">About</Link></li>
-                            <li className="hover:text-secondary duration-200"><Link to="/projects">Projects</Link></li>
-                            <li className="hover:text-secondary duration-200"><Link to="/contact">Contact</Link></li>
+                            <li className="hover:text-secondaryColor duration-200"><Link to="/">Home</Link></li>
+                            <li className="hover:text-secondaryColor duration-200"><Link to="/about">About</Link></li>
+                            <li className="hover:text-secondaryColor duration-200"><Link to="/projects">Projects</Link></li>
+                            <li className="hover:text-secondaryColor duration-200"><Link to="/contact">Contact</Link></li>
                         </ul>
                     </div>
                     <div className="flex flex-col gap-3">
-                        <h1 className="text-xl font-semibold border-b-[2.5px] pb-1 text-secPrimary w-fit border-secondary max-[500px]:w-fit max-[500px]:text-lg">More Links</h1>
+                        <h1 className="text-xl font-semibold border-b-[2.5px] pb-1 text-secondaryColor w-fit border-secondarytext-secondaryColor max-[500px]:w-fit max-[500px]:text-lg">More Links</h1>
                         <ul className="flex flex-col gap-2 text-[16px] text-[#eee] max-[500px]:text-[15px]">
-                            <li className="hover:text-secondary duration-200"><Link to="/services/web">Web Developement</Link></li>
-                            <li className="hover:text-secondary duration-200"><Link to="/services/game">Game Development</Link></li>
-                            <li className="hover:text-secondary duration-200"><Link to="/services/app">App Development</Link></li>
-                            <li className="hover:text-secondary duration-200"><Link to="/services/graphic">Graphic Designing</Link></li>
-                            <li className="hover:text-secondary duration-200"><Link to="/services/digital">Digital Marketing</Link></li>
+                            <li className="hover:text-secondaryColor duration-200"><Link to="/services/web">Web Developement</Link></li>
+                            <li className="hover:text-secondaryColor duration-200"><Link to="/services/game">Game Development</Link></li>
+                            <li className="hover:text-secondaryColor duration-200"><Link to="/services/app">App Development</Link></li>
+                            <li className="hover:text-secondaryColor duration-200"><Link to="/services/graphic">Graphic Designing</Link></li>
+                            <li className="hover:text-secondaryColor duration-200"><Link to="/services/digital">Digital Marketing</Link></li>
                         </ul>
                     </div>
                     <div className="flex flex-col gap-3">
-                        <h1 className="text-xl font-semibold border-b-[2.5px] pb-1 text-secPrimary w-fit border-secondary max-[500px]:w-fit max-[500px]:text-lg">Resourses</h1>
+                        <h1 className="text-xl font-semibold border-b-[2.5px] pb-1 text-secondaryColor w-fit border-secondarytext-secondaryColor max-[500px]:w-fit max-[500px]:text-lg">Resourses</h1>
                         <ul className="flex flex-col gap-2 text-[16px] text-[#eee] max-[500px]:text-[15px]">
-                            <li className="hover:text-secondary duration-200">FAQ</li>
-                            <li className="hover:text-secondary duration-200">Privacy Policy</li>
-                            <li className="hover:text-secondary duration-200">Terms of Service</li>
+                            <li className="hover:text-secondaryColor duration-200">FAQ</li>
+                            <li className="hover:text-secondaryColor duration-200">Privacy Policy</li>
+                            <li className="hover:text-secondaryColor duration-200">Terms of Service</li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div className="bg-secondary w-full text-primary">
+            <div className="bg-secondaryColor  w-full text-[#000]">
                 <p className="py-4 pl-20 max-[500px]:text-sm">Copyright &copy; 2024 IT Solutions All Rights Reserved.</p>
             </div>
         </footer>

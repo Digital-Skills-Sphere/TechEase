@@ -29,8 +29,8 @@ const Testimonial: React.FC<TestimonialProps> = () => {
             onClick={() => handleClick(index)}
             className={`relative flex justify-center items-center duration-300 cursor-pointer rounded-full h-[90px] w-[90px] ${
               index === isTextVisible
-                ? "border-[#edff71] border-[3px]"
-                : "border-[3px] border-[#27363d]"
+                ? "border-secondaryColor border-[3px]"
+                : "border-[3px] border-primaryColor"
             } ${index % 2 === 0 ? "" : "translate-y-[90px]"}`}
           >
             <img
@@ -83,7 +83,7 @@ const Testimonial: React.FC<TestimonialProps> = () => {
               }`}
               key={ind}
             >
-              <h2 className="text-[26px] font-bold pb-5 text-[#27363d]">
+              <h2 className="text-[26px] font-bold pb-5 text-primaryColor">
                 {name}
               </h2>
               <p className="leading-[30px] text-center">{text}</p>
