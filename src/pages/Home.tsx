@@ -5,11 +5,11 @@ import Testimonial from "../components/Other Components/Testimonial";
 import { VelocityScroll } from "../components/ui/scroll-based-velocity";
 import Accordian from "../components/Other Components/Accordian";
 import BoxComponent from "../components/Other Components/BoxComponent";
+import GetInTouch from "../components/Other Components/GetInTouch";
 
 const Home = () => {
   return (
     <>
-      <WCU_Home />
       <BoxComponent/>
       <VelocityScroll
         text="TechEase - Lets Create Something Awesume"
@@ -17,9 +17,7 @@ const Home = () => {
         className="text-6xl font-bold leading-[70px]"
       />
       <Accordian />
-      <TimelineAndProcess />
-      <WhatMakesDifferent />
-      <Testimonial />
+      <GetInTouch/>
     </>
   );
 };
