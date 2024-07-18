@@ -4,11 +4,13 @@ import WhatMakesDifferent from "../components/Other Components/WhatMakesDifferen
 import Testimonial from "../components/Other Components/Testimonial";
 import ServiceWeOffer from "../components/Other Components/ServiceWeOffer";
 
+
 const Home = () => {
   return (
     <>
       <WCU_Home />
       <ServiceWeOffer />
+      
       <TimelineAndProcess />
       <WhatMakesDifferent />
       <Testimonial />
