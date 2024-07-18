@@ -11,7 +11,7 @@ const Home = () => {
       <WCU_Home />
       <VelocityScroll
         text="TechEase - Lets Create Something Awesume"
-        default_velocity={2}
+        default_velocity={1}
         className="text-6xl font-bold leading-[70px]"
       />
       <Accordian />
