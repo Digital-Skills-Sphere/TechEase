@@ -5,10 +5,10 @@ const Footer = () => {
     return (
         <footer className="flex flex-col justify-center items-center gap-16 bg-primaryColor text-white pt-16">
             <div className="flex gap-12 px-5 w-[90vw] max-[1120px]:gap-6 max-[1120px]:px-3 max-[930px]:flex-col ">
-                <div className="w-[40vw] flex flex-col gap-6 pr-7 py-1 max-[1020px]:pr-2 max-[930px]:border-none">
+                <div className="w-[40vw] flex flex-col gap-2 pr-7 py-1 max-[1020px]:pr-2 max-[930px]:border-none">
                     <img className="w-[200px]" src={logo} alt="" />
-                    <p className="max-w-[350px] max-[500px]:text-sm leading-[30px]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea eveniet alias incidunt exercitationem vel sapiente exercitationem vel sapiente</p>
-                    <div className ="group grid grid-cols-2 w-[200px] gap-0 hover:gap-2 duration-500 relative shadow-sm">
+                    <p className="max-w-[400px] max-[500px]:text-sm leading-[30px]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea eveniet alias incidunt exercitationem vel</p>
+                    {/* <div className ="group grid grid-cols-2 w-[200px] gap-0 hover:gap-2 duration-500 relative shadow-sm">
                         <h1
                             className ="absolute z-10 group-hover:hidden duration-200 top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2"
                         >
@@ -19,7 +19,7 @@ const Footer = () => {
                                 width="4"
                                 xmlns="http://www.w3.org/2000/svg"
                                 aria-hidden="true"
-                                className ="w-7 h-7 text-secondaryColor"
+                                className ="w-7 h-7"
                             >
                                 <path
                                     d="M5 7h14M5 12h14M5 17h14"
@@ -102,11 +102,11 @@ const Footer = () => {
                                 ></path>
                             </svg>
                         </a>
-                    </div>
+                    </div> */}
                 </div>
                 <div className="flex gap-10 w-[50vw] justify-evenly max-[1120px]:gap-6 max-[930px]:gap-12 max-[500px]:flex-col ">
                     <div className="flex flex-col gap-3">
-                        <h1 className="text-xl font-semibold border-b-[2.5px] pb-1 text-secondaryColor w-fit border-secondarytext-secondaryColor max-[500px]:w-fit max-[500px]:text-lg">Quick Links</h1>
+                        <h1 className="text-xl font-semibold border-b-[2.5px] pb-1 w-fit border-secondarytext-secondaryColor max-[500px]:w-fit max-[500px]:text-lg">Quick Links</h1>
                         <ul className="flex flex-col gap-2 text-[16px] text-[#eee] max-[500px]:text-[15px]">
                             <li className="hover:text-secondaryColor duration-200"><Link to="/">Home</Link></li>
                             <li className="hover:text-secondaryColor duration-200"><Link to="/about">About</Link></li>
@@ -115,7 +115,7 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div className="flex flex-col gap-3">
-                        <h1 className="text-xl font-semibold border-b-[2.5px] pb-1 text-secondaryColor w-fit border-secondarytext-secondaryColor max-[500px]:w-fit max-[500px]:text-lg">More Links</h1>
+                        <h1 className="text-xl font-semibold border-b-[2.5px] pb-1 w-fit border-secondarytext-secondaryColor max-[500px]:w-fit max-[500px]:text-lg">More Links</h1>
                         <ul className="flex flex-col gap-2 text-[16px] text-[#eee] max-[500px]:text-[15px]">
                             <li className="hover:text-secondaryColor duration-200"><Link to="/services/web">Web Developement</Link></li>
                             <li className="hover:text-secondaryColor duration-200"><Link to="/services/game">Game Development</Link></li>
@@ -125,7 +125,7 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div className="flex flex-col gap-3">
-                        <h1 className="text-xl font-semibold border-b-[2.5px] pb-1 text-secondaryColor w-fit border-secondarytext-secondaryColor max-[500px]:w-fit max-[500px]:text-lg">Resourses</h1>
+                        <h1 className="text-xl font-semibold border-b-[2.5px] pb-1 w-fit border-secondarytext-secondaryColor max-[500px]:w-fit max-[500px]:text-lg">Resourses</h1>
                         <ul className="flex flex-col gap-2 text-[16px] text-[#eee] max-[500px]:text-[15px]">
                             <li className="hover:text-secondaryColor duration-200">FAQ</li>
                             <li className="hover:text-secondaryColor duration-200">Privacy Policy</li>
@@ -134,7 +134,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="bg-secondaryColor  w-full text-[#000]">
+            <div className="w-full text-white border-t-2 text-center">
                 <p className="py-4 pl-20 max-[500px]:text-sm">Copyright &copy; 2024 IT Solutions All Rights Reserved.</p>
             </div>
         </footer>
