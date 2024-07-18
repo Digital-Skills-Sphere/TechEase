@@ -33,11 +33,6 @@ import image4 from "../assets/image4.jpg";
 import image5 from "../assets/image5.jpg";
 import image6 from "../assets/image6.jpg";
 import image7 from "../assets/image7.jpg";
-import webImg from "../assets/web.svg"
-import gameImg from "../assets/game.svg"
-import appImg from "../assets/app.svg"
-import graphicImg from "../assets/graphic.svg"
-import digitalImg from "../assets/digital.svg"
 
 
 
@@ -52,29 +47,29 @@ import digitalImg from "../assets/digital.svg"
 
 export const serviceData = [
     {
-        imgUrl: webImg,
+        imgUrl: "",
         serviceName: "Web Development",
-        text: "Our web development team crafts responsive, scalable, and robust websites tailored to your business needs, ensuring a seamless user experience and high performance."
+        text: "Transforming your ideas into stunning, high-performance websites that captivate and engage."
     },
     {
-        imgUrl: gameImg,
+        imgUrl: "",
         serviceName: "Game Development",
-        text: "Immerse your audience with captivating and interactive games developed by our skilled game development team. We bring your game concepts to life with stunning graphics and seamless gameplay"
+        text: "Crafting immersive gaming experiences that bring your creative visions to life."
     },
     {
-        imgUrl: appImg,
+        imgUrl: "",
         serviceName: "App Development",
-        text: "Transform your ideas into powerful mobile applications with our expert app development services. We create intuitive and apps that provide exceptional user experiences across all devices and platforms."
+        text: "Building user-friendly mobile applications that enhance accessibility and usability."
     },
     {
-        imgUrl: graphicImg,
+        imgUrl: "",
         serviceName: "Graphic Designing",
-        text: "Our graphic design services deliver visually striking and creative designs that effectively communicate your brand message. From logos to marketing materials"
+        text: "Designing visually appealing graphics that reflect your brand's identity and message."
     },
     {
-        imgUrl: digitalImg,
+        imgUrl: "",
         serviceName: "Digital Marketing",
-        text: "Maximize your online presence with our comprehensive digital marketing strategies. We utilize SEO, social media, and targeted campaigns to drive traffic, increase engagement, and boost your brand's visibility and growth."
+        text: "Creating strategic digital campaigns that boost your online presence and drive growth."
     }
 
 ]

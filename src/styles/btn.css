@@ -1,8 +1,8 @@
 .btn {
   font-size: 17px;
-  background: #000000;
+  background: #000;
   border: none;
-  padding: 1em 1.5em;
+  padding: 9px 12px;
   color: #fff;
   text-transform: uppercase;
   position: relative;
@@ -22,7 +22,7 @@
   bottom: 0;
   height: 2px;
   width: 0;
-  background-color: #ffc81a;
+  background-color: #fff;
   transition: 0.5s ease;
 }
 
@@ -42,7 +42,7 @@
   bottom: 0;
   height: 0;
   width: 100%;
-  background-color: #ffc81a;
+  background-color: #fff;
   transition: 0.4s ease;
   z-index: -1;
 }
