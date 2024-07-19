@@ -1,5 +1,3 @@
-import Particles from "../ui/Particles";
-
 const HomeHeader = () => {
   return (
     <div
