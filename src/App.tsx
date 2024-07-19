@@ -8,10 +8,10 @@ const App: React.FC = () => {
   const curPage: string = location.pathname;
 
   return (
-    <div className="overflow-x-hidden font-[roboto] bg-[#000]">
+    <div className="overflow-x-hidden font-[Adamina] bg-[#000]">
       <Navbar />
       {curPage === "/" ? <HomeHeader /> : <>Other Page Headers</>}
-      <main className="w-full mx-auto flex flex-col gap-[100px] my-[50px]">
+      <main className="w-full mx-auto flex flex-col gap-[100px] py-12 my-[50px] bg-black z-30 relative">
         <Outlet />
       </main>
       <Footer />

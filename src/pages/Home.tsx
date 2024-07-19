@@ -8,7 +8,7 @@ const Home = () => {
     <>
       <BoxComponent/>
       <VelocityScroll
-        text="TechEase - Lets Create Something Awesume"
+        text="TechEase - Lets Create Something Awesome"
         default_velocity={1}
         className="text-6xl font-bold leading-[70px]"
       />

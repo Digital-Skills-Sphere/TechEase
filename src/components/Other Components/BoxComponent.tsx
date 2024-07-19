@@ -148,7 +148,7 @@ const BoxComponent: React.FC = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <div className="flex flex-col justify-center gap-[50px] pl-[70px]">
+    <div className="flex flex-col justify-center items-center gap-[50px]">
       <div className="grid grid-cols-2 w-fit">
         <SparklesText
           text="We’ve got"
