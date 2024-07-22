@@ -1,13 +1,59 @@
+import { useEffect, useRef, useState } from "react";
 import Btn from "./Btn";
+import SparklesText from "../ui/sparkles-text";
 
 const GetInTouch = () => {
+  const formRef = useRef<HTMLDivElement>(null);
+  const [bgPercent, setBgPercent] = useState(100);
+  const [bgReversePercent, setBgReversePercent] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (formRef.current) {
+        const rect = formRef.current.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+
+        if (rect.top < windowHeight && rect.bottom > 0) {
+          // Calculate how much the component is in view
+          const percentInView = Math.min(
+            1,
+            Math.max(
+              0,
+              (windowHeight - rect.top) / (windowHeight + rect.height)
+            )
+          );
+
+          // Update the background percentages based on scroll position
+          setBgPercent(100 - percentInView * 100);
+          setBgReversePercent(percentInView * 100);
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <>
-      <form className="text-white flex flex-col px-[200px] gap-12">
+      <div
+        ref={formRef}
+        style={{
+          background: `conic-gradient(from 90deg at ${bgPercent}% 0%, rgba(97, 106, 115, .12), transparent 180deg) 0% 0% / 50% 100% no-repeat, conic-gradient(from 270deg at ${bgReversePercent}% 0%, transparent 180deg, rgba(97, 106, 115, .12)) 100% 0% / 50% 100% no-repeat`,
+        }}
+        className="text-white flex flex-col px-28 gap-12 py-10"
+      >
         <h2 className="text-xl text-[#b9b9b9]">Get in Touch</h2>
-        <h1 className="text-5xl font-medium max-w-[200px] leading-[60px]">
-          Drop Us a Line
-        </h1>
+        <div className="text-5xl font-medium max-w-[250px] flex flex-col justify-center gap-4">
+          <div className="flex items-center gap-5">
+            <SparklesText className="font-bold" text="Drop" sparklesCount={2} isBig={true} />
+            <SparklesText className="font-thin" text="Us" sparklesCount={2} isBig={false} />
+          </div>
+          <div className="flex items-center gap-5">
+            <SparklesText className="font-bold" text="a" sparklesCount={2} isBig={true} />
+            <SparklesText className="font-thin" text="Line" sparklesCount={2} isBig={false} />
+          </div>
+        </div>
         <div className="flex flex-col gap-16">
           <div className="flex gap-10">
             <div className="flex flex-col w-1/2">
@@ -43,7 +89,7 @@ const GetInTouch = () => {
           </div>
         </div>
         <Btn heading="Send Message" />
-      </form>
+      </div>
     </>
   );
 };
