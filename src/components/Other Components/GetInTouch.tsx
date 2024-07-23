@@ -41,17 +41,17 @@ const GetInTouch = () => {
         style={{
           background: `conic-gradient(from 90deg at ${bgPercent}% 0%, rgba(97, 106, 115, .12), transparent 180deg) 0% 0% / 50% 100% no-repeat, conic-gradient(from 270deg at ${bgReversePercent}% 0%, transparent 180deg, rgba(97, 106, 115, .12)) 100% 0% / 50% 100% no-repeat`,
         }}
-        className="text-white flex flex-col px-28 gap-12 py-10"
+        className="text-white flex flex-col px-28 gap-12 py-20"
       >
         <h2 className="text-xl text-[#b9b9b9]">Get in Touch</h2>
         <div className="text-5xl font-medium max-w-[250px] flex flex-col justify-center gap-4">
           <div className="flex items-center gap-5">
-            <SparklesText className="font-bold" text="Drop" sparklesCount={2} isBig={true} />
-            <SparklesText className="font-thin" text="Us" sparklesCount={2} isBig={false} />
+            <SparklesText className="font-bold" text="Drop" sparklesCount={2} />
+            <SparklesText className="font-thin" text="Us" sparklesCount={2} isBig={true} />
           </div>
           <div className="flex items-center gap-5">
-            <SparklesText className="font-bold" text="a" sparklesCount={2} isBig={true} />
-            <SparklesText className="font-thin" text="Line" sparklesCount={2} isBig={false} />
+            <SparklesText className="font-bold" text="a" sparklesCount={2} />
+            <SparklesText className="font-thin" text="Line" sparklesCount={2} isBig={true} />
           </div>
         </div>
         <div className="flex flex-col gap-16">

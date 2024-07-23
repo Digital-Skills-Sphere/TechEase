@@ -26,39 +26,38 @@ function Navbar({ className }: { className?: string }) {
               href="/services/web"
               src="https://assets.aceternity.com/demos/algochurn.webp"
               description="Prepare for tech interviews like never before."
-              setActive={setActive} // Pass setActive to close menu on click
+              setActive={setActive}
             />
             <ProductItem
               title="Game Development"
               href="/services/game"
               src="https://assets.aceternity.com/demos/tailwindmasterkit.webp"
               description="Production ready Tailwind css components for your next project"
-              setActive={setActive} // Pass setActive to close menu on click
+              setActive={setActive}
             />
             <ProductItem
               title="App Development"
               href="/services/app"
               src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.51.31%E2%80%AFPM.png"
               description="Never write from scratch again. Go from idea to blog in minutes."
-              setActive={setActive} // Pass setActive to close menu on click
+              setActive={setActive}
             />
             <ProductItem
               title="Graphic Designing"
-              href="services/graphic"
+              href="/services/graphic"
               src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
               description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
-              setActive={setActive} // Pass setActive to close menu on click
+              setActive={setActive}
             />
             <ProductItem
               title="Digital Marketing"
-              href="/digital"
+              href="/services/digital"
               src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
               description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
-              setActive={setActive} // Pass setActive to close menu on click
+              setActive={setActive}
             />
           </div>
         </MenuItem>
-        <HoveredLink path="/projects">Projects</HoveredLink>
         <HoveredLink path="/contact">Contact</HoveredLink>
       </Menu>
     </div>

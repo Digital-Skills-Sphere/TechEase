@@ -22,7 +22,7 @@ const HomeHeader = () => {
           in the digital age.
         </p>
       </div>
-      <motion.div initial={{x:200}} animate={{x:0}} transition={{ease:[0.76, 0, 0.24, 1]}}  className="absolute h-screen top-0 right-0 w-[80%] bg-[url(src/assets/game.png)] bg-center bg-cover bg-no-repeat"></motion.div>
+      <motion.div initial={{x:200}} animate={{x:0}} transition={{ease:[0.76, 0, 0.24, 1]}}  className="absolute h-screen top-0 right-0 w-[80%] bg-[url(src/assets/graphic.png)] bg-center bg-cover bg-no-repeat"></motion.div>
     </div>
   );
 };

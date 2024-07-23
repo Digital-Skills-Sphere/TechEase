@@ -156,20 +156,19 @@ const BoxComponent: React.FC = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <div className="flex flex-col justify-center items-center gap-[80px] bg-white py-10">
+    <div className="flex flex-col justify-center items-center gap-[80px] bg-white py-20">
       <div className="flex flex-col">
         <div className="flex gap-5 items-center">
           <SparklesText
             text="We’ve got"
             className="text-black text-bold font-[60px]"
             sparklesCount={2}
-            isBig={true}
           />
           <SparklesText
             text="your back"
             className="text-black font-thin text"
             sparklesCount={2}
-            isBig={false}
+            isBig={true}
           />
         </div>
         <div className="flex gap-5 items-center">
@@ -177,13 +176,12 @@ const BoxComponent: React.FC = () => {
             text="no matter"
             className="text-black"
             sparklesCount={2}
-            isBig={true}
           />
           <SparklesText
             text="your stack."
             className="text-black font-thin "
             sparklesCount={2}
-            isBig={false}
+            isBig={true}
           />
         </div>
       </div>

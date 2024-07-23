@@ -11,18 +11,17 @@ export function AnimatedPinDemo() {
         <DotPattern />
       </div>
       <div className="flex flex-col gap-10">
-        <div className="flex items-center pl-24 gap-5">
+        <div className="flex items-center pl-24 gap-2 text-black">
           <SparklesText
             className="font-bold"
             text="Our"
             sparklesCount={2}
-            isBig={true}
           />
           <SparklesText
             className="font-thin text-4xl"
             text="Projects"
             sparklesCount={2}
-            isBig={false}
+            isBig={true}
           />
         </div>
         <div className="flex justify-center gap-5">

@@ -116,7 +116,7 @@ export const ProductItem = ({
   description: string;
   href: string;
   src: string;
-  setActive: (item: string | null) => void; // Add setActive prop
+  setActive: (item: string | null) => void;
 }) => {
   return (
     <Link to={href} className="flex space-x-2" onClick={() => setActive(null)}>

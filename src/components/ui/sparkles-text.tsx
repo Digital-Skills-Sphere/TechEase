@@ -110,7 +110,7 @@ const SparklesText: React.FC<SparklesTextProps> = ({
   return (
     <div
       className={cn(
-        `${isBig ? "font-bold text-6xl" : "font-thin text-5xl"}`,
+        `${isBig ? "text-[60px] font-extrabold" : "font-thin text-[55px]"}`,
         className
       )}
       {...props}

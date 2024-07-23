@@ -40,7 +40,7 @@ const Accordian = () => {
   }, []);
 
   return (
-    <div ref={divRef} className="px-28 py-10 text-white flex flex-col gap-10"
+    <div ref={divRef} className="px-28 py-20 text-white flex flex-col gap-10"
     style={{
       background: `conic-gradient(from 90deg at ${bgPercent}% 0%, rgba(97, 106, 115, .12), transparent 180deg) 0% 0% / 50% 100% no-repeat, conic-gradient(from 270deg at ${bgReversePercent}% 0%, transparent 180deg, rgba(97, 106, 115, .12)) 100% 0% / 50% 100% no-repeat`,
     }}>
