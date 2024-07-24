@@ -121,7 +121,7 @@ const SingleStack: React.FC<SingleStackProps> = ({
   return (
     <div
       className={`relative border-[1px] border-[#333] grid place-items-center py-8 px-10`}
-      style={{ backgroundColor: `${isHovered ? bgColor : "black"}` }}
+      style={{ backgroundColor: `${isHovered ? bgColor : "white"}` }}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
     >
@@ -136,10 +136,18 @@ const SingleStack: React.FC<SingleStackProps> = ({
       )}
       <img
         src={imgUrl}
-        className="relative h-auto invert-[100] w-[50px]"
+        className={`relative h-auto w-[50px] ${
+          isHovered && "invert-[100] scale-[1.2] duration-200"
+        }`}
         alt={stackName}
       />
-      <p className="relative text-center mt-2">{stackName}</p>
+      <p
+        className={`relative text-center mt-2 font-medium text-black ${
+          isHovered && "invert-[100]"
+        }`}
+      >
+        {stackName}
+      </p>
     </div>
   );
 };
@@ -148,28 +156,34 @@ const BoxComponent: React.FC = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <div className="flex flex-col justify-center gap-[50px] pl-[70px]">
-      <div className="grid grid-cols-2 w-fit">
-        <SparklesText
-          text="We’ve got"
-          className="text-white"
-          sparklesCount={2}
-        />
-        <SparklesText
-          text="your back"
-          className="text-white font-thin"
-          sparklesCount={2}
-        />
-        <SparklesText
-          text="no matter"
-          className="text-white"
-          sparklesCount={2}
-        />
-        <SparklesText
-          text="your stack."
-          className="text-white font-thin"
-          sparklesCount={2}
-        />
+    <div className="flex flex-col justify-center items-center gap-[80px] bg-white py-20">
+      <div className="flex flex-col">
+        <div className="flex gap-5 items-center">
+          <SparklesText
+            text="We’ve got"
+            className="text-black text-bold font-[60px]"
+            sparklesCount={2}
+          />
+          <SparklesText
+            text="your back"
+            className="text-black font-thin text"
+            sparklesCount={2}
+            isBig={true}
+          />
+        </div>
+        <div className="flex gap-5 items-center">
+          <SparklesText
+            text="no matter"
+            className="text-black"
+            sparklesCount={2}
+          />
+          <SparklesText
+            text="your stack."
+            className="text-black font-thin "
+            sparklesCount={2}
+            isBig={true}
+          />
+        </div>
       </div>
       <div className="text-white grid grid-cols-5 w-fit">
         {stackData.map(({ bgColor, imgUrl, stackName }, index) => {

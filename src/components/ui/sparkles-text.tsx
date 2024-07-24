@@ -3,7 +3,7 @@
 import { CSSProperties, ReactElement, useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
-import { cn } from "../..//lib/utils";
+import { cn } from "../../lib/utils";
 
 interface Sparkle {
   id: string;
@@ -48,6 +48,8 @@ interface SparklesTextProps {
    * */
   sparklesCount?: number;
 
+  isBig?: boolean;
+
   /**
    * @default "{first: '#9E7AFF', second: '#FE8BBB'}"
    * @type string
@@ -65,6 +67,7 @@ const SparklesText: React.FC<SparklesTextProps> = ({
   colors = { first: "#9E7AFF", second: "#FE8BBB" },
   className,
   sparklesCount = 10,
+  isBig,
   ...props
 }) => {
   const [sparkles, setSparkles] = useState<Sparkle[]>([]);
@@ -106,7 +109,10 @@ const SparklesText: React.FC<SparklesTextProps> = ({
 
   return (
     <div
-      className={cn("text-6xl font-bold", className)}
+      className={cn(
+        `${isBig ? "text-[60px] font-extrabold" : "font-thin text-[55px]"}`,
+        className
+      )}
       {...props}
       style={
         {
