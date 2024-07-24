@@ -1,6 +1,7 @@
 import TechStack from "../components/Other Components/TechStack";
 import SparklesText from "../components/ui/sparkles-text";
 import Accordian2 from "../components/Other Components/Accordian2";
+import Price from "../components/Other Components/price";
 
 const webStack = [
   {
@@ -60,6 +61,7 @@ const Web = () => {
           <TechStack myStack={webStack} stackName="Web" />
         </div>
       </div>
+      <Price/>
       <Accordian2 />
     </>
   );
