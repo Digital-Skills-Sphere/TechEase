@@ -40,7 +40,7 @@ const GetInTouch = () => {
         className="relative text-white flex flex-col px-28 gap-12 py-20"
       >
         <div
-        ref={formRef} className="absolute z-10 w-full h-full left-1/2 top-20 -translate-x-1/2"
+        ref={formRef} className="absolute -z-10 w-full h-full left-1/2 top-20 -translate-x-1/2"
         style={{
           background: `conic-gradient(from 90deg at ${bgPercent}% 0%, rgba(97, 106, 115, .12), transparent 180deg) 0% 0% / 50% 100% no-repeat, conic-gradient(from 270deg at ${bgReversePercent}% 0%, transparent 180deg, rgba(97, 106, 115, .12)) 100% 0% / 50% 100% no-repeat`,
         }}
@@ -85,7 +85,7 @@ const GetInTouch = () => {
             </label>
             <textarea
               id="message"
-              rows={8}
+              rows={4}
               className="bg-transparent border-b-[1px] border-[#333] outline-none max-w-[800px] py-2"
             />
           </div>

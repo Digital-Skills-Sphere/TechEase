@@ -66,7 +66,7 @@ interface DivProps {
 const Div: React.FC<DivProps> = ({ data, ind }) => {
   return (
     <div
-      className={`h-[300px] w-[280px] ${ind === 1 ? 'bg-[#000] text-[#fff]' : 'bg-[#f8f8f8] text-[#27363d] shadow-custom'
+      className={`h-[300px] w-[280px] ${ind === 1 ? 'bg-[#000] text-[#fff] z-10' : 'bg-[#f8f8f8] text-[#27363d] shadow-custom'
         } rounded-[40px] text-left p-[30px] relative ${ind === 0 ? 'rotate-[-8deg] top-[10px]' : ind === 2 ? 'rotate-[8deg] top-[10px]' : ''
         }`}
     >
@@ -76,7 +76,7 @@ const Div: React.FC<DivProps> = ({ data, ind }) => {
         <span className={`text-[40px] `}>{data.price}</span>/
         {data.period}
       </p>
-      <p className="absolute bottom-[30px] text-[16px]">{data.Tagline}</p>
+      <p className="absolute bottom-[30px] text-[16px] left-5">{data.Tagline}</p>
     </div>
   );
 };
@@ -89,7 +89,7 @@ const Price: React.FC = () => {
     <>
       <div className="text-center w-screen flex flex-col items-center py-[50px]  bg-white ">
        
-          <div className='flex flex-col w-fit text-black'>
+          <div className='flex flex-col text-black'>
             <div className='flex gap-2 items-end'>
               <SparklesText text='Explore' sparklesCount={2} />
               <SparklesText text='Our' sparklesCount={2} isBig={true} />

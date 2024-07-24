@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 export function AnimatedPinDemo() {
   return (
-    <div className="w-full relative bg-white py-20 px-20">
+    <div className="w-full relative bg-white py-20 px-16">
       <div>
         <DotPattern />
       </div>
@@ -24,9 +24,9 @@ export function AnimatedPinDemo() {
             isBig={true}
           />
         </div>
-        <div className="flex justify-between gap-2 px-5">
+        <div className="flex justify-between gap-2">
           <PinContainer
-            title="/ui.aceternity.com"
+            title="Visit Website"
             href="https://cancerheal.co.in/index.html"
           >
             <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem]">
@@ -46,7 +46,7 @@ export function AnimatedPinDemo() {
             </div>
           </PinContainer>
           <PinContainer
-            title="/ui.aceternity.com"
+            title="Visit Website"
             href="https://hotelswale.com/"
           >
             <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem] ">
@@ -66,7 +66,7 @@ export function AnimatedPinDemo() {
             </div>
           </PinContainer>
           <PinContainer
-            title="/ui.aceternity.com"
+            title="Visit Website"
             href="https://ineptstudio.com/"
           >
             <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem] ">

@@ -36,7 +36,7 @@ export default function AboutText() {
   }, []);
 
   return (
-    <div className="relative my-20">
+    <div className="relative">
       <div
         ref={divRef}
         className="absolute z-10 w-full h-full left-1/2 top-10 -translate-x-1/2"

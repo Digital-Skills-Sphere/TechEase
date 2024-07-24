@@ -1,7 +1,7 @@
 import TechStack from "../components/Other Components/TechStack";
 import SparklesText from "../components/ui/sparkles-text";
 import Accordian2 from "../components/Other Components/Accordian2";
-import Price from "../components/Other Components/price";
+import Price from "../components/Other Components/Price";
 
 const webStack = [
   {

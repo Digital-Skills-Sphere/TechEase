@@ -1,6 +1,7 @@
 import SparklesText from "../components/ui/sparkles-text";
 import TechStack from "../components/Other Components/TechStack";
 import Accordian2 from "../components/Other Components/Accordian2";
+import Price from "../components/Other Components/Price";
 
 const appStack = [
   {
@@ -66,6 +67,7 @@ const AppDev = () => {
         </div>
       </div>
       <Accordian2 />
+      <Price/>
     </>
   );
 };

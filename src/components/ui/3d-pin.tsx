@@ -35,7 +35,7 @@ export const PinContainer = ({
       )}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
-      to={href || "/"} // Changed from href to to
+      to={href || "/"}
     >
       <div
         style={{
