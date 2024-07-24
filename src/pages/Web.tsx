@@ -61,8 +61,8 @@ const Web = () => {
           <TechStack myStack={webStack} stackName="Web" />
         </div>
       </div>
-      <Price/>
       <Accordian2 />
+      <Price/>
     </>
   );
 };
