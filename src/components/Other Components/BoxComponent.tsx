@@ -156,9 +156,9 @@ const BoxComponent: React.FC = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <div className="flex flex-col justify-center items-center gap-[80px] bg-white py-20">
+    <div className="flex flex-col justify-center items-center gap-[80px] bg-white py-20 px-20">
       <div className="flex flex-col">
-        <div className="flex gap-5 items-center">
+        <div className="flex gap-5 items-end">
           <SparklesText
             text="We’ve got"
             className="text-black text-bold font-[60px]"
@@ -171,7 +171,7 @@ const BoxComponent: React.FC = () => {
             isBig={true}
           />
         </div>
-        <div className="flex gap-5 items-center">
+        <div className="flex gap-5 items-end">
           <SparklesText
             text="no matter"
             className="text-black"

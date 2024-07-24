@@ -5,11 +5,11 @@ export default function MissionAndValues() {
   return (
     <div className="px-16 py-20 mx-auto bg-white text-black">
       <div>
-        <div className="flex gap-2 items-center">
+        <div className="flex gap-2 items-end">
           <SparklesText sparklesCount={2} text="Our" />
           <SparklesText sparklesCount={2} text="Mission" isBig={true} />
         </div>
-        <div className="flex gap-2 items-center">
+        <div className="flex gap-2 items-end">
           <SparklesText sparklesCount={2} text="and" />
           <SparklesText sparklesCount={2} text="Values" isBig={true} />
         </div>

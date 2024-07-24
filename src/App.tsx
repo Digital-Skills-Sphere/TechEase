@@ -1,7 +1,6 @@
 import { Outlet, useLocation } from "react-router-dom";
 import HomeHeader from "./components/Other Components/Header";
 import Footer from "./components/Other Components/Footer";
-import Navbar from "./components/Other Components/Navbar";
 import LocomotiveScroll from "locomotive-scroll";
 import { AboutHeader } from "./components/Other Components/AboutHeader";
 import { NavbarDemo } from "./components/Other Components/NavbarDemo";
@@ -10,6 +9,7 @@ import { AppHeader } from "./components/Other Components/AppHeader";
 import { GameHeader } from "./components/Other Components/GameHeader";
 import { DigitalHeader } from "./components/Other Components/DigitalHeader";
 import { GraphicHeader } from "./components/Other Components/GraphicHeader";
+import { ContactHeader } from "./components/Other Components/ContactHeader";
 
 const App: React.FC = () => {
   const locomotiveScroll = new LocomotiveScroll();
@@ -18,7 +18,6 @@ const App: React.FC = () => {
 
   return (
     <div className="overflow-x-hidden font-[Adamina] bg-[#000]">
-      <Navbar />
       <NavbarDemo />
       {curPage === "/" ? (
         <HomeHeader />
@@ -32,8 +31,10 @@ const App: React.FC = () => {
         <GameHeader />
       ) : curPage === "/services/digital" ? (
         <DigitalHeader />
-      ) : (
+      ) : curPage === "/services/graphic" ? (
         <GraphicHeader />
+      ) : (
+        <ContactHeader />
       )}
       <main className="w-full mx-auto flex flex-col py-12 my-[50px] bg-black z-30 relative text-white">
         <Outlet />

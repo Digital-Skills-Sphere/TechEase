@@ -6,12 +6,12 @@ import { Link } from "react-router-dom";
 
 export function AnimatedPinDemo() {
   return (
-    <div className="w-full relative bg-white py-20">
+    <div className="w-full relative bg-white py-20 px-20">
       <div>
         <DotPattern />
       </div>
       <div className="flex flex-col gap-10">
-        <div className="flex items-center pl-24 gap-2 text-black">
+        <div className="flex items-center gap-2 text-black">
           <SparklesText
             className="font-bold"
             text="Our"
@@ -24,7 +24,7 @@ export function AnimatedPinDemo() {
             isBig={true}
           />
         </div>
-        <div className="flex justify-center gap-5">
+        <div className="flex justify-between gap-2 px-5">
           <PinContainer
             title="/ui.aceternity.com"
             href="https://cancerheal.co.in/index.html"

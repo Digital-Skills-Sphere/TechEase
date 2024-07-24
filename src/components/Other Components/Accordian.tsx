@@ -40,10 +40,13 @@ const Accordian = () => {
   }, []);
 
   return (
-    <div ref={divRef} className="px-28 py-20 text-white flex flex-col gap-10"
-    style={{
-      background: `conic-gradient(from 90deg at ${bgPercent}% 0%, rgba(97, 106, 115, .12), transparent 180deg) 0% 0% / 50% 100% no-repeat, conic-gradient(from 270deg at ${bgReversePercent}% 0%, transparent 180deg, rgba(97, 106, 115, .12)) 100% 0% / 50% 100% no-repeat`,
-    }}>
+    <div className="relative px-28 py-20 text-white flex flex-col gap-10">
+      <div
+        ref={divRef} className="absolute z-10 w-full h-full left-1/2 top-20 -translate-x-1/2"
+        style={{
+          background: `conic-gradient(from 90deg at ${bgPercent}% 0%, rgba(97, 106, 115, .12), transparent 180deg) 0% 0% / 50% 100% no-repeat, conic-gradient(from 270deg at ${bgReversePercent}% 0%, transparent 180deg, rgba(97, 106, 115, .12)) 100% 0% / 50% 100% no-repeat`,
+        }}
+      />
       <div className="flex flex-col gap-5">
         <h2 className="text-xl text-[#b9b9b9]">What We Do</h2>
         <SparklesText text="Services" sparklesCount={2} isBig={true} />

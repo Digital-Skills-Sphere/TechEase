@@ -1,10 +1,5 @@
 import React, { useState } from "react";
-import {
-  motion,
-  AnimatePresence,
-  useScroll,
-  useMotionValueEvent,
-} from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
 
 const transition = {
@@ -67,19 +62,7 @@ export const Menu = ({
   setActive: (item: string | null) => void;
   children: React.ReactNode;
 }) => {
-  const { scrollYProgress } = useScroll();
-  const [visible, setVisible] = useState(false);
-
-  useMotionValueEvent(scrollYProgress, "change", (current) => {
-    if (typeof current === "number") {
-      let direction = current - scrollYProgress.getPrevious()!;
-      if (scrollYProgress.get() < 0.05) {
-        setVisible(false);
-      } else {
-        setVisible(direction < 0);
-      }
-    }
-  });
+  const [visible, setVisible] = useState(true); // Always visible
 
   return (
     <AnimatePresence mode="wait">
@@ -96,14 +79,13 @@ export const Menu = ({
           duration: 0.2,
         }}
         onMouseLeave={() => setActive(null)}
-        className="relative rounded-full border border-transparent dark:bg-black dark:border-white/[0.2] bg-white shadow-input flex justify-center space-x-12 px-8 py-6"
+        className="relative rounded-full border border-transparent dark:bg-black bg-white shadow-input flex justify-center space-x-12 px-8 py-6"
       >
         {children}
       </motion.nav>
     </AnimatePresence>
   );
 };
-
 
 export const ProductItem = ({
   title,
