@@ -40,7 +40,7 @@ const Accordian = () => {
   }, []);
 
   return (
-    <div className="relative px-28 py-20 text-white flex flex-col gap-10">
+    <div className="relative px-20 py-20 text-white flex flex-col gap-10 max-800:px-10 max-550:px-5">
       <div
         ref={divRef} className="absolute -z-10 w-full h-full left-1/2 top-20 -translate-x-1/2"
         style={{

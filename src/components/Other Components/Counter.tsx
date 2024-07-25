@@ -41,7 +41,7 @@ const Counter: React.FC = () => {
     return (
         <div ref={ref} className="flex flex-col gap-8 px-16 py-16 text-white">
             <div>
-                <ul className="grid grid-cols-4 text-center gap-2 max-[800px]:grid-cols-2 max-[800px]:gap-y-12 max-[500px]:grid-cols-1">
+                <ul className="grid grid-cols-4 text-center gap-4 gap-y-10 max-800:grid-cols-2 max-550:grid-cols-1">
                     <li className="flex flex-col gap-5">
                         {inView && <CounterItem start={0} end={5} duration={2000} />}
                         <span className="text-xl text-[#dadada]">Years in IT</span>

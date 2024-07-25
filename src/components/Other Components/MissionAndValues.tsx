@@ -3,7 +3,7 @@ import SparklesText from "../ui/sparkles-text";
 
 export default function MissionAndValues() {
   return (
-    <div className="px-16 py-20 mx-auto bg-white text-black">
+    <div className="px-20 py-20 mx-auto bg-white text-black max-800:px-10 max-550:px-5">
       <div>
         <div className="flex gap-2 items-end">
           <SparklesText sparklesCount={2} text="Our" />

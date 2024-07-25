@@ -120,7 +120,7 @@ const SingleStack: React.FC<SingleStackProps> = ({
 }) => {
   return (
     <div
-      className={`relative border-[1px] border-[#333] grid place-items-center py-8 px-10`}
+      className="relative border-[1px] border-[#333] grid place-items-center py-8 px-10"
       style={{ backgroundColor: `${isHovered ? bgColor : "white"}` }}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
@@ -156,9 +156,9 @@ const BoxComponent: React.FC = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <div className="flex flex-col justify-center items-center gap-[80px] bg-white py-20 px-20">
+    <div className="flex flex-col justify-center items-center gap-[80px] bg-white py-20 px-20 max-800:px-10 max-800:gap-[60px] max-550:px-5 max-550:gap-[40px]">
       <div className="flex flex-col">
-        <div className="flex gap-5 items-end">
+        <div className="flex gap-5 items-end max-800:gap-4 max-550:gap-2">
           <SparklesText
             text="We’ve got"
             className="text-black text-bold font-[60px]"
@@ -171,7 +171,7 @@ const BoxComponent: React.FC = () => {
             isBig={true}
           />
         </div>
-        <div className="flex gap-5 items-end">
+        <div className="flex gap-5 items-end max-800:gap-4 max-550:gap-2">
           <SparklesText
             text="no matter"
             className="text-black"
@@ -185,7 +185,7 @@ const BoxComponent: React.FC = () => {
           />
         </div>
       </div>
-      <div className="text-white grid grid-cols-5 w-fit">
+      <div className="text-white grid grid-cols-5 w-fit max-1000:grid-cols-3 max-700:grid-cols-2">
         {stackData.map(({ bgColor, imgUrl, stackName }, index) => {
           return (
             <SingleStack
