@@ -36,7 +36,7 @@ const App: React.FC = () => {
       ) : (
         <ContactHeader />
       )}
-      <main className="w-full mx-auto flex flex-col py-12 my-[50px] bg-black z-30 relative text-white">
+      <main className="w-full mx-auto flex flex-col bg-black z-30 relative text-white">
         <Outlet />
       </main>
       <Footer />

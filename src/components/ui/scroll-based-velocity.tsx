@@ -1,5 +1,3 @@
-"use client";
-
 import React, { useEffect, useRef, useState } from "react";
 import {
   motion,
@@ -106,7 +104,7 @@ export function VelocityScroll({
   }
 
   return (
-    <section className="relative w-full text-white flex flex-col leading-[90px]">
+    <section className="relative w-full text-white flex flex-col leading-[90px] py-7">
       <ParallaxText baseVelocity={default_velocity} className={className}>
         {text}
       </ParallaxText>

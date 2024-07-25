@@ -1,11 +1,25 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { HoveredLink, Menu, MenuItem, ProductItem } from "../ui/navbar-menu";
-import { cn } from "../..//lib/utils";
+import { cn } from "../../lib/utils";
+import { MobileNav } from "./MobileNav";
 
 export function NavbarDemo() {
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 550);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 550);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
-    <div className="relative w-full flex items-center justify-center">
-      <Navbar className="top-2" />
+    <div className="relative w-full h-full flex items-center justify-center ">
+      {isMobile ? <MobileNav /> : <Navbar />}
     </div>
   );
 }
@@ -14,7 +28,10 @@ function Navbar({ className }: { className?: string }) {
   const [active, setActive] = useState<string | null>(null);
   return (
     <div
-      className={cn("fixed top-10 inset-x-0 max-w-4xl mx-auto z-50", className)}
+      className={cn(
+        "fixed top-2 inset-x-0 max-w-4xl mx-auto z-[1000]",
+        className
+      )}
     >
       <Menu setActive={setActive}>
         <HoveredLink path="/">Home</HoveredLink>

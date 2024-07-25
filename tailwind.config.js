@@ -61,6 +61,10 @@ export default {
         "accordion-up": "accordion-up .3s ease-out",
       },
     },
+    screens: {
+      'max-900': { 'max': '900px' },
+      'max-550': { 'max': '550px' },
+    },
   },
   plugins: [
     addVariablesForColors,
