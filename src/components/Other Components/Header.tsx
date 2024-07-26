@@ -23,13 +23,8 @@ const HomeHeader = () => {
           in the digital age.
         </p>
       </div>
-      <div
-        // className="absolute h-screen top-0 right-0 w-[100%] bg-[url(src/assets/temp-1.png)] bg-center bg-contain bg-no-repeat"
-        className="absolute h-screen inset-0 w-[100%] bg-[url(https://img.freepik.com/free-vector/realistic-technology-background_52683-73672.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1720483200&semt=ais_user)] bg-cover bg-center bg-no-repeat"
-      />
-        {/* <img src="" className="h-full w-full"/> */}
-        {/* <div className="absolute bg-[#00000025] h-full w-full inset-0"/>
-      </div> */}
+      <div className="absolute h-screen inset-0 w-[100%] bg-[url(https://img.freepik.com/free-vector/realistic-technology-background_52683-73672.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1720483200&semt=ais_user)] bg-cover bg-center bg-no-repeat" />
+      <div className="absolute h-full w-full bg-[#0000005a]" />
     </div>
   );
 };
