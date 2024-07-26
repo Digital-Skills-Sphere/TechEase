@@ -42,11 +42,11 @@ const SingleTool: React.FC<SingleToolProps> = ({ imgUrl, heading }) => {
   return (
     <div className="flex flex-col items-center gap-2">
       <img
-        className="h-[120px] w-[120px] max-[850px]:h-[100px] max-[850px]:w-[100px] max-[500px]:h-[80px] max-[500px]:w-[80px]  max-[400px]:h-[60px] max-[400px]:w-[60px] object-contain drop-shadow-lg"
+        className="h-[120px] w-[120px] max-800:h-[100px] max-800:w-[100px] max-550:h-[80px] max-550:w-[80px] max-400:h-[60px] max-400:w-[60px] object-contain drop-shadow-lg"
         src={imgUrl}
         alt=""
       />
-      <h1 className="text-2xl font-bold max-[850px]:text-xl max-[500px]:text-lg max-[400px]:text-[16px]">
+      <h1 className="text-2xl font-bold max-800:text-xl max-550:text-lg max-400:text-[16px]">
         {heading}
       </h1>
     </div>
@@ -55,12 +55,12 @@ const SingleTool: React.FC<SingleToolProps> = ({ imgUrl, heading }) => {
 
 const ToolsWeUsed: React.FC = () => {
   return (
-    <div className="flex flex-col gap-8 bg-white text-black py-20 px-20">
+    <div className="flex flex-col gap-8 bg-white text-black py-20 px-20 max-800:px-10 max-550:px-5">
       <div className="flex gap-2 items-end">
         <SparklesText text="Tools We" sparklesCount={2} />
         <SparklesText text="Used" sparklesCount={2} isBig={true} />
       </div>
-      <div className="grid grid-cols-3 gap-y-12 place-items-center">
+      <div className="grid grid-cols-3 gap-y-12 place-items-center max-600:grid-cols-2">
         {toolsWeUsed.map(({ imgUrl, heading }, ind) => {
           return <SingleTool key={ind} imgUrl={imgUrl} heading={heading} />;
         })}

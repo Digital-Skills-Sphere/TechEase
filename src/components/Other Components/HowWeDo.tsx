@@ -1,4 +1,3 @@
-import DoubleHeading from "./DoubleHeading";
 import researchImg from "../../assets/research.png";
 import positioningImg from "../../assets/positioning.png";
 import marketingImg from "../../assets/marketing.png";
@@ -60,10 +59,10 @@ const SingleHowWeDo: React.FC<SingleHowWeDoProps> = ({
         className="w-24 h-24"
         alt=""
       />
-      <h1 className="text-2xl font-bold max-[850px]:text-xl max-[500px]:text-lg">
+      <h1 className="text-2xl font-bold max-800:text-xl">
         {heading}
       </h1>
-      <p className="max-w-[450px] text-sm text-[#333] max-[500px]:text-xs">
+      <p className="max-w-[450px] text-sm text-[#333]">
         {para}
       </p>
     </div>
@@ -72,7 +71,7 @@ const SingleHowWeDo: React.FC<SingleHowWeDoProps> = ({
 
 const HowWeDo: React.FC = () => {
   return (
-    <div className="flex flex-col gap-8 overflow-x-hidden bg-white text-black px-20 py-20">
+    <div className="flex flex-col gap-8 overflow-x-hidden bg-white text-black px-20 py-20 max-800:px-10 max-550:px-5">
       <div className="flex flex-col">
         <div className="flex gap-2 items-center">
           <SparklesText text="How" sparklesCount={2} />
@@ -85,16 +84,16 @@ const HowWeDo: React.FC = () => {
       </div>
       <div className="flex relative flex-col gap-5 w-full">
         <div className="">
-          <div className="bg-[#333] border-[1px] absolute h-full w-[2px] flex left-2/4 -translate-x-2/4 max-[1050px]:hidden"></div>
-          <div className="flex flex-col justify-around absolute left-2/4 -translate-x-2/4 w-fit h-full max-[1050px]:hidden">
+          <div className="bg-[#333] border-[1px] absolute h-full w-[2px] flex left-2/4 -translate-x-2/4 max-1100:hidden"></div>
+          <div className="flex flex-col justify-around absolute left-2/4 -translate-x-2/4 w-fit h-full max-1100:hidden">
             {[...Array(5)].map((_, index) => (
               <div
                 key={index}
-                className="bg-gray-400 relative h-7 w-7 max-[1115px]:h-5 max-[1115px]:w-5 rounded-full max-[1100px]:h-4 max-[1100px]:w-4"
+                className="bg-gray-400 relative h-7 w-7 rounded-full"
               >
                 <div
                   data-aos="zoom-in"
-                  className="w-7 h-7 bg-purple-700 absolute top-0 max-[1115px]:h-5 max-[1115px]:w-5 rounded-full z-10"
+                  className="w-7 h-7 bg-purple-700 absolute top-0 rounded-full z-10"
                 ></div>
               </div>
             ))}

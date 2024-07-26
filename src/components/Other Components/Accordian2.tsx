@@ -39,11 +39,11 @@ const Accordian2 = () => {
 
   return (
     <div
-      className="relative px-20 py-28 text-white flex flex-col gap-10 overflow-hidden"
+      className="relative px-20 py-28 text-white flex flex-col gap-10 overflow-hidden max-800:px-10 max-550:px-5"
     >
     <div
       ref={divRef}
-      className="absolute w-full h-full top-20 left-1/2 -translate-x-1/2"
+      className="absolute w-full h-full top-20 left-1/2 -translate-x-1/2 -z-10"
       style={{
         background: `conic-gradient(from 90deg at ${bgPercent}% 0%, rgba(97, 106, 115, .12), transparent 180deg) 0% 0% / 50% 100% no-repeat, conic-gradient(from 270deg at ${bgReversePercent}% 0%, transparent 180deg, rgba(97, 106, 115, .12)) 100% 0% / 50% 100% no-repeat`,
       }}
@@ -60,11 +60,11 @@ const Accordian2 = () => {
         <Accordion type="single" collapsible>
           <AccordionItem value="item-1">
             <AccordionTrigger>
-              <span className="text-3xl">
+              <span className="text-3xl text-left max-1100:text-2xl max-900:text-xl max-550:text-lg">
                 How much time does it usually take to develop a website?{" "}
               </span>
             </AccordionTrigger>
-            <AccordionContent className="max-w-[80vw] leading-[35px]">
+            <AccordionContent className="max-w-[80vw] leading-[35px] max-550:text-sm max-550:max-w-none">
               The terms of web solution development may vary a lot from project
               to project. Based on the complexity, scope of functionality, and
               general purpose of your website, it may take from 3-6 weeks to
@@ -75,11 +75,11 @@ const Accordian2 = () => {
           </AccordionItem>
           <AccordionItem value="item-2">
             <AccordionTrigger>
-              <span className="text-3xl">
+              <span className="text-3xl text-left max-1100:text-2xl max-900:text-xl max-550:text-lg">
                 How much time does it usually take to develop a website?{" "}
               </span>
             </AccordionTrigger>
-            <AccordionContent className="max-w-[80vw] leading-[35px]">
+            <AccordionContent className="max-w-[80vw] leading-[35px] max-550:text-sm max-550:max-w-none">
               The terms of web solution development may vary a lot from project
               to project. Based on the complexity, scope of functionality, and
               general purpose of your website, it may take from 3-6 weeks to
@@ -90,11 +90,11 @@ const Accordian2 = () => {
           </AccordionItem>
           <AccordionItem value="item-3">
             <AccordionTrigger>
-              <span className="text-3xl">
+              <span className="text-3xl text-left max-1100:text-2xl max-900:text-xl max-550:text-lg">
                 How much time does it usually take to develop a website?{" "}
               </span>
             </AccordionTrigger>
-            <AccordionContent className="max-w-[80vw] leading-[35px]">
+            <AccordionContent className="max-w-[80vw] leading-[35px] max-550:text-sm max-550:max-w-none">
               The terms of web solution development may vary a lot from project
               to project. Based on the complexity, scope of functionality, and
               general purpose of your website, it may take from 3-6 weeks to
@@ -105,11 +105,11 @@ const Accordian2 = () => {
           </AccordionItem>
           <AccordionItem value="item-4">
             <AccordionTrigger>
-              <span className="text-3xl">
+              <span className="text-3xl text-left max-1100:text-2xl max-900:text-xl max-550:text-lg">
                 How much time does it usually take to develop a website?{" "}
               </span>
             </AccordionTrigger>
-            <AccordionContent className="max-w-[80vw] leading-[35px]">
+            <AccordionContent className="max-w-[80vw] leading-[35px] max-550:text-sm max-550:max-w-none">
               The terms of web solution development may vary a lot from project
               to project. Based on the complexity, scope of functionality, and
               general purpose of your website, it may take from 3-6 weeks to
@@ -120,11 +120,11 @@ const Accordian2 = () => {
           </AccordionItem>
           <AccordionItem value="item-5">
             <AccordionTrigger>
-              <span className="text-3xl">
+              <span className="text-3xl text-left max-1100:text-2xl max-900:text-xl max-550:text-lg">
                 How much time does it usually take to develop a website?{" "}
               </span>
             </AccordionTrigger>
-            <AccordionContent className="max-w-[80vw] leading-[35px]">
+            <AccordionContent className="max-w-[80vw] leading-[35px] max-550:text-sm max-550:max-w-none">
               The terms of web solution development may vary a lot from project
               to project. Based on the complexity, scope of functionality, and
               general purpose of your website, it may take from 3-6 weeks to

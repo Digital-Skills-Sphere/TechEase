@@ -25,8 +25,8 @@ const appStack = [
 const Game = () => {
   return (
     <>
-      <div className="bg-white text-black py-20 px-16">
-        <div className="flex justify-between items-center gap-3">
+      <div className="bg-white text-black py-20 px-16 max-800:px-10 max-550:px-5">
+        <div className="flex justify-between items-center gap-3 max-1200:flex-col-reverse max-1200:items-start">
           <div className="flex flex-col gap-4">
             <div>
               <div className="flex gap-2 items-center">
@@ -42,16 +42,16 @@ const Game = () => {
                 <SparklesText sparklesCount={2} text="Stack" isBig={true} />
               </div>
             </div>
-            <p className="max-w-[700px] leading-[30px]">
+            <p className="max-w-[700px] leading-[30px] max-550:text-sm">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
               quasi ratione consequatur error! Laboriosam, voluptatum harum?
               Accusamus, tempora dignissimos? Voluptatum odit mollitia nemo
               tenetur officia quasi numquam, temporibus assumenda sunt.
             </p>
           </div>
-          <div>
+          <div className="rounded-full h-[450px] w-[450px] max-1300:w-[350px] max-1300:h-[350px] max-800:w-[300px] max-800:h-[300px] max-550:w-[250px] max-550:h-[250px]">
             <img
-              className="rounded-full h-[450px] w-[450px] object-cover"
+              className="rounded-full w-full h-full object-cover"
               src="/src/assets/gameStack.png"
               alt=""
             />
@@ -61,8 +61,8 @@ const Game = () => {
           <TechStack myStack={appStack} stackName="Web" />
         </div>
       </div>
-      <Accordian2/>
-<Price/>
+      <Accordian2 />
+      <Price />
     </>
   );
 };
