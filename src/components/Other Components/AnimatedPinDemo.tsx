@@ -1,7 +1,6 @@
 import { PinContainer } from "../ui/3d-pin";
 import DotPattern from "../ui/dot-pattern";
 import SparklesText from "../ui/sparkles-text";
-import Btn from "./Btn";
 import { Link } from "react-router-dom";
 
 export function AnimatedPinDemo() {
@@ -90,7 +89,6 @@ export function AnimatedPinDemo() {
           to="/projects"
           className="bg-black w-fit relative z-10 ml-auto mr-32 mt-10"
         >
-          <Btn heading="More Projects" />
         </Link>
       </div>
     </div>
