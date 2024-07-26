@@ -11,7 +11,7 @@ const Home = () => {
       <VelocityScroll
         text="TechEase - Lets Create Something Awesome"
         default_velocity={1}
-        className="text-[100px] font-semibold min-h-max"
+        className="text-[100px] font-semibold min-h-max max-900:text-[80px] max-550:text-[50px]"
       />
       <BoxComponent />
       <Accordian />

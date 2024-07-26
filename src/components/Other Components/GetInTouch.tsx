@@ -37,7 +37,7 @@ const GetInTouch = () => {
   return (
     <>
       <div
-        className="relative text-white flex flex-col px-28 gap-12 py-20"
+        className="relative text-white flex flex-col px-20 gap-12 py-20 max-800:px-10 max-550:px-5"
       >
         <div
         ref={formRef} className="absolute -z-10 w-full h-full left-1/2 top-20 -translate-x-1/2"
@@ -57,7 +57,7 @@ const GetInTouch = () => {
           </div>
         </div>
         <div className="flex flex-col gap-16">
-          <div className="flex gap-10">
+          <div className="flex gap-10 max-550:flex-col">
             <div className="flex flex-col w-1/2">
               <label htmlFor="name" className="text-xl">
                 Name *

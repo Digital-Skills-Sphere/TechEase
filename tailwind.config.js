@@ -62,7 +62,12 @@ export default {
       },
     },
     screens: {
+      'max-1300': { 'max': '1300px' },
+      'max-1200': { 'max': '1200px' },
+      'max-1000': { 'max': '1000px' },
       'max-900': { 'max': '900px' },
+      'max-800': { 'max': '800px' },
+      'max-700': { 'max': '700px' },
       'max-550': { 'max': '550px' },
     },
   },

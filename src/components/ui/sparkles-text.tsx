@@ -1,4 +1,3 @@
-"use client";
 
 import { CSSProperties, ReactElement, useEffect, useState } from "react";
 import { motion } from "framer-motion";
@@ -110,7 +109,7 @@ const SparklesText: React.FC<SparklesTextProps> = ({
   return (
     <div
       className={cn(
-        `${isBig ? "text-[60px] font-extrabold" : "font-thin text-[55px]"}`,
+        `${isBig ? "text-[60px] font-extrabold max-800:text-[45px] max-550:text-[30px]" : "font-thin text-[55px] max-800:text-[40px] max-550:text-[25px]"}`,
         className
       )}
       {...props}

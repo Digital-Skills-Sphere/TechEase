@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 export function AnimatedPinDemo() {
   return (
-    <div className="w-full relative bg-white py-20 px-16">
+    <div className="w-full relative bg-white py-20 px-16 max-800:px-10 max-550:px-5">
       <div>
         <DotPattern />
       </div>
@@ -24,7 +24,7 @@ export function AnimatedPinDemo() {
             isBig={true}
           />
         </div>
-        <div className="flex justify-between gap-2">
+        <div className="flex justify-center gap-5 flex-wrap gap-y-20">
           <PinContainer
             title="Visit Website"
             href="https://cancerheal.co.in/index.html"

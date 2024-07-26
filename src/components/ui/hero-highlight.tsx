@@ -26,13 +26,13 @@ export const HeroHighlight: React.FC<HeroHighlightProps> = ({ className }) => {
   return (
     <div
       className={cn(
-        "relative py-32 flex flex-col gap-12 items-center bg-white dark:bg-black justify-center w-full group px-16"
+        "relative py-32 flex flex-col gap-12 items-center bg-black justify-center w-full group px-16 max-800:px-10 max-550:px-5"
       )}
       onMouseMove={handleMouseMove}
     >
-      <div className="absolute inset-0 bg-dot-thick-neutral-300 dark:bg-dot-thick-neutral-800 pointer-events-none" />
+      <div className="absolute inset-0 bg-dot-thick-neutral-800 pointer-events-none" />
       <motion.div
-        className="pointer-events-none bg-dot-thick-indigo-500 dark:bg-dot-thick-indigo-500 absolute inset-0 opacity-0 transition duration-300 group-hover:opacity-100"
+        className="pointer-events-none bg-dot-thick-indigo-500 absolute inset-0 opacity-0 transition duration-300 group-hover:opacity-100"
         style={{
           WebkitMaskImage: useMotionTemplate`
             radial-gradient(
@@ -50,11 +50,11 @@ export const HeroHighlight: React.FC<HeroHighlightProps> = ({ className }) => {
           `,
         }}
       />
-      <div className="relative z-10 flex flex-col items-center gap-5">
+      <div className="relative z-10 flex flex-col items-center gap-7">
         <div className={cn("relative z-20", className)}>
-          <div className="text-5xl">Ready to Work Together?</div>
+          <div className="text-5xl max-800:text-4xl max-550:3xl">Ready to Work Together?</div>
         </div>
-        <div className="text-center text-[18px] text-paraColor leading-[35px]">
+        <div className="text-center text-[18px] text-paraColor leading-[35px] max-800:text-[16px] max-550:text-sm">
           An interior design agency can create content that showcases its work,
           highlights design trends, and provides educational resources for
           clients and followers. Some potential content ideas for an interior
