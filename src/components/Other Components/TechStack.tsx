@@ -24,7 +24,7 @@ const TechStack: React.FC<TechStackProps> = ({ myStack, stackName }) => {
   return (
     <div className="flex flex-col gap-8">
       <div className="flex flex-col gap-12 text-2xl font-semibold">
-        <div className="grid grid-cols-4 max-[850px]:grid-cols-2 gap-y-5 max-[550px]:grid-cols-1">
+        <div className="grid grid-cols-4 max-800:grid-cols-2 max-800:gap-y-7 max-550:grid-cols-1">
           {myStack.map((val, ind) => {
             return (
               <h1
@@ -44,7 +44,7 @@ const TechStack: React.FC<TechStackProps> = ({ myStack, stackName }) => {
             );
           })}
         </div>
-        <div className="grid grid-cols-4 max-[850px]:grid-cols-2 gap-y-5 max-[550px]:grid-cols-1">
+        <div className="grid grid-cols-4 max-800:grid-cols-2 max-800:gap-y-7 max-550:grid-cols-1">
           {stack.map((val, ind) => {
             return (
               <div key={ind} className="w-full flex justify-center">

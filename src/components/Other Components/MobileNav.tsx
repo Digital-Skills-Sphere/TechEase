@@ -41,7 +41,7 @@ export const MobileNav = () => {
 
   return (
     <div className="text-white z-[300] relative">
-      <ul className="flex justify-between gap-4 fixed bottom-2 left-1/2 -translate-x-1/2 bg-black w-[95%] p-5 rounded-full text-sm">
+      <ul className="flex justify-between gap-4 fixed bottom-2 left-1/2 -translate-x-1/2 bg-black w-[95%] py-5 px-8 rounded-full text-sm">
         <Link to="/">
           <li>Home</li>
         </Link>
