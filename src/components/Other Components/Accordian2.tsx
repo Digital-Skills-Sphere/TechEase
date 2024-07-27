@@ -38,16 +38,14 @@ const Accordian2 = () => {
   }, []);
 
   return (
-    <div
-      className="relative px-20 py-28 text-white flex flex-col gap-10 overflow-hidden max-800:px-10 max-550:px-5"
-    >
-    <div
-      ref={divRef}
-      className="absolute w-full h-full top-20 left-1/2 -translate-x-1/2 -z-10"
-      style={{
-        background: `conic-gradient(from 90deg at ${bgPercent}% 0%, rgba(97, 106, 115, .12), transparent 180deg) 0% 0% / 50% 100% no-repeat, conic-gradient(from 270deg at ${bgReversePercent}% 0%, transparent 180deg, rgba(97, 106, 115, .12)) 100% 0% / 50% 100% no-repeat`,
-      }}
-    />
+    <div className="relative px-20 py-28 text-white flex flex-col gap-10 overflow-hidden max-800:px-10 max-550:px-5">
+      <div
+        ref={divRef}
+        className="absolute w-full h-full top-20 left-1/2 -translate-x-1/2 -z-10"
+        style={{
+          background: `conic-gradient(from 90deg at ${bgPercent}% 0%, rgba(97, 106, 115, .12), transparent 180deg) 0% 0% / 50% 100% no-repeat, conic-gradient(from 270deg at ${bgReversePercent}% 0%, transparent 180deg, rgba(97, 106, 115, .12)) 100% 0% / 50% 100% no-repeat`,
+        }}
+      />
       <div className="flex flex-col gap-5">
         <h2 className="text-xl text-[#b9b9b9]">FAQ</h2>
         <SparklesText
@@ -61,76 +59,66 @@ const Accordian2 = () => {
           <AccordionItem value="item-1">
             <AccordionTrigger>
               <span className="text-3xl text-left max-1100:text-2xl max-900:text-xl max-550:text-lg">
-                How much time does it usually take to develop a website?{" "}
+                What technologies do you use for web development?
               </span>
             </AccordionTrigger>
             <AccordionContent className="max-w-[80vw] leading-[35px] max-550:text-sm max-550:max-w-none">
-              The terms of web solution development may vary a lot from project
-              to project. Based on the complexity, scope of functionality, and
-              general purpose of your website, it may take from 3-6 weeks to
-              several months to complete. The fastest results without a bit of
-              sacrificed quality can be achieved with a savvy development
-              provider backing up the project.
+              We use a range of technologies for web development, including
+              HTML, CSS, JavaScript, and frameworks like React, Angular, and
+              Vue.js. Our backend solutions often involve Node.js, Python
+              (Django/Flask), and PHP (Laravel).
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-2">
             <AccordionTrigger>
               <span className="text-3xl text-left max-1100:text-2xl max-900:text-xl max-550:text-lg">
-                How much time does it usually take to develop a website?{" "}
+                Can you develop apps for both iOS and Android?
               </span>
             </AccordionTrigger>
             <AccordionContent className="max-w-[80vw] leading-[35px] max-550:text-sm max-550:max-w-none">
-              The terms of web solution development may vary a lot from project
-              to project. Based on the complexity, scope of functionality, and
-              general purpose of your website, it may take from 3-6 weeks to
-              several months to complete. The fastest results without a bit of
-              sacrificed quality can be achieved with a savvy development
-              provider backing up the project.
+              Yes, we develop apps for both iOS and Android platforms. We use
+              technologies like React Native and Flutter for cross-platform
+              development, as well as Swift and Kotlin for native development.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-3">
             <AccordionTrigger>
               <span className="text-3xl text-left max-1100:text-2xl max-900:text-xl max-550:text-lg">
-                How much time does it usually take to develop a website?{" "}
+                What is your process for developing a game?
               </span>
             </AccordionTrigger>
             <AccordionContent className="max-w-[80vw] leading-[35px] max-550:text-sm max-550:max-w-none">
-              The terms of web solution development may vary a lot from project
-              to project. Based on the complexity, scope of functionality, and
-              general purpose of your website, it may take from 3-6 weeks to
-              several months to complete. The fastest results without a bit of
-              sacrificed quality can be achieved with a savvy development
-              provider backing up the project.
+              Our game development process includes initial concept creation,
+              design and prototyping, development using engines like Unity or
+              Unreal, and rigorous testing. We focus on creating engaging and
+              immersive experiences for players.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-4">
             <AccordionTrigger>
               <span className="text-3xl text-left max-1100:text-2xl max-900:text-xl max-550:text-lg">
-                How much time does it usually take to develop a website?{" "}
+                How do you ensure the quality of your graphic designs?
               </span>
             </AccordionTrigger>
             <AccordionContent className="max-w-[80vw] leading-[35px] max-550:text-sm max-550:max-w-none">
-              The terms of web solution development may vary a lot from project
-              to project. Based on the complexity, scope of functionality, and
-              general purpose of your website, it may take from 3-6 weeks to
-              several months to complete. The fastest results without a bit of
-              sacrificed quality can be achieved with a savvy development
-              provider backing up the project.
+              We ensure high-quality graphic designs through a collaborative
+              process that involves understanding client requirements, multiple
+              design iterations, and feedback incorporation. Our designers use
+              tools like Adobe Creative Suite to create visually stunning
+              graphics.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-5">
             <AccordionTrigger>
               <span className="text-3xl text-left max-1100:text-2xl max-900:text-xl max-550:text-lg">
-                How much time does it usually take to develop a website?{" "}
+                What digital marketing strategies do you implement?
               </span>
             </AccordionTrigger>
             <AccordionContent className="max-w-[80vw] leading-[35px] max-550:text-sm max-550:max-w-none">
-              The terms of web solution development may vary a lot from project
-              to project. Based on the complexity, scope of functionality, and
-              general purpose of your website, it may take from 3-6 weeks to
-              several months to complete. The fastest results without a bit of
-              sacrificed quality can be achieved with a savvy development
-              provider backing up the project.
+              We implement a variety of digital marketing strategies, including
+              SEO, PPC, social media marketing, content marketing, and email
+              campaigns. Our goal is to increase your online visibility and
+              drive traffic to your site, leading to higher conversion rates.
             </AccordionContent>
           </AccordionItem>
         </Accordion>

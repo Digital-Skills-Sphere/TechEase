@@ -42,7 +42,8 @@ const Accordian = () => {
   return (
     <div className="relative px-20 py-20 text-white flex flex-col gap-10 max-800:px-10 max-550:px-5">
       <div
-        ref={divRef} className="absolute -z-10 w-full h-full left-1/2 top-20 -translate-x-1/2"
+        ref={divRef}
+        className="absolute -z-10 w-full h-full left-1/2 top-20 -translate-x-1/2"
         style={{
           background: `conic-gradient(from 90deg at ${bgPercent}% 0%, rgba(97, 106, 115, .12), transparent 180deg) 0% 0% / 50% 100% no-repeat, conic-gradient(from 270deg at ${bgReversePercent}% 0%, transparent 180deg, rgba(97, 106, 115, .12)) 100% 0% / 50% 100% no-repeat`,
         }}
@@ -58,11 +59,10 @@ const Accordian = () => {
               <span>Web Development</span>
             </AccordionTrigger>
             <AccordionContent>
-              Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam.
-              Integer ut neque. Vivamus nisi metus, molestie vel, gravida in,
-              condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam
-              mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a
-              velit eu ante scelerisque vulputate.
+              Our web development team crafts dynamic, responsive websites
+              tailored to your business needs. From elegant corporate sites to
+              robust e-commerce platforms, we ensure a seamless user experience
+              with cutting-edge technologies and intuitive design.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-2">
@@ -70,11 +70,10 @@ const Accordian = () => {
               <span>Game Development</span>
             </AccordionTrigger>
             <AccordionContent>
-              Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam.
-              Integer ut neque. Vivamus nisi metus, molestie vel, gravida in,
-              condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam
-              mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a
-              velit eu ante scelerisque vulputate.
+              Immerse your audience in captivating digital worlds with our game
+              development expertise. We design and develop engaging games with
+              stunning graphics and seamless gameplay, ensuring a thrilling
+              experience across multiple platforms.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-3">
@@ -82,11 +81,10 @@ const Accordian = () => {
               <span>App Development</span>
             </AccordionTrigger>
             <AccordionContent>
-              Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam.
-              Integer ut neque. Vivamus nisi metus, molestie vel, gravida in,
-              condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam
-              mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a
-              velit eu ante scelerisque vulputate.
+              Our app development service turns innovative ideas into functional
+              mobile applications. We specialize in creating intuitive,
+              user-friendly apps for iOS and Android, focusing on performance,
+              security, and scalability to bring your vision to life.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-4">
@@ -94,11 +92,10 @@ const Accordian = () => {
               <span>Graphic Designing</span>
             </AccordionTrigger>
             <AccordionContent>
-              Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam.
-              Integer ut neque. Vivamus nisi metus, molestie vel, gravida in,
-              condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam
-              mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a
-              velit eu ante scelerisque vulputate.
+              Our graphic design services bring your brand to life through
+              visually compelling designs. From logos and marketing materials to
+              complete brand identities, we create stunning visuals that
+              communicate your message and captivate your audience.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-5">
@@ -106,11 +103,11 @@ const Accordian = () => {
               <span>Digital Marketing</span>
             </AccordionTrigger>
             <AccordionContent>
-              Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam.
-              Integer ut neque. Vivamus nisi metus, molestie vel, gravida in,
-              condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam
-              mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a
-              velit eu ante scelerisque vulputate.
+              Boost your online presence and drive engagement with our digital
+              marketing strategies. We offer comprehensive services including
+              SEO, social media marketing, and PPC campaigns, tailored to
+              enhance your brand's reach and convert visitors into loyal
+              customers.
             </AccordionContent>
           </AccordionItem>
         </Accordion>

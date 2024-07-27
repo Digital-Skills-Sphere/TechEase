@@ -121,7 +121,7 @@ const Footer = () => {
               © Copyright 2023 - Mil. All Rights Reserved.
             </p>
           </div>
-          <div className="w-[215px]">
+          {/* <div className="w-[215px]">
             <p className="text-[22px] max-900:text-[20px]">Canada</p>
             <p className="text-[14px] text-[#ffffff66] max-900:text-[13px]">
               {" "}
@@ -133,7 +133,7 @@ const Footer = () => {
             <p className="text-[14px] text-[#ffffff66] max-900:text-[13px]">
               Leehove 40, 2678 MC De Lier, Netherlands +31 174 705 811
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
     </>

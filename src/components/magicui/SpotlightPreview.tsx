@@ -1,7 +1,6 @@
 import { Spotlight } from "../ui/Spotlight";
 
 export function SpotlightPreview() {
-
   return (
     <div className="w-full rounded-md py-36 flex md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
       <Spotlight
@@ -13,10 +12,10 @@ export function SpotlightPreview() {
           Spotlight <br /> is the new trend.
         </h1>
         <p className="mt-4 font-normal text-base text-neutral-300 max-w-[800px] text-center mx-auto">
-          Spotlight effect is a great way to draw attention to a specific part
-          of the page. Here, we are drawing the attention towards the text
-          section of the page. I don&apos;t know why but I&apos;m running out of
-          copy.
+          Our Spotlight feature highlights key products, services, or stories in
+          a visually compelling way, capturing audience attention and
+          engagement. Stay ahead of the curve with Spotlight, making your brand
+          memorable and driving interaction.
         </p>
       </div>
     </div>

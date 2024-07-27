@@ -43,10 +43,12 @@ const Game = () => {
               </div>
             </div>
             <p className="max-w-[700px] leading-[30px] max-550:text-sm">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-              quasi ratione consequatur error! Laboriosam, voluptatum harum?
-              Accusamus, tempora dignissimos? Voluptatum odit mollitia nemo
-              tenetur officia quasi numquam, temporibus assumenda sunt.
+              Our game development tech stack is designed to bring immersive and
+              interactive gaming experiences to life. We utilize powerful
+              engines like Unity and Unreal Engine, combined with languages such
+              as C# and C++, to create stunning visuals and smooth gameplay. Our
+              expertise in both 2D and 3D game development allows us to craft
+              games that are visually appealing and technically sound.
             </p>
           </div>
           <div className="rounded-full h-[450px] w-[450px] max-1300:w-[350px] max-1300:h-[350px] max-800:w-[300px] max-800:h-[300px] max-550:w-[250px] max-550:h-[250px]">

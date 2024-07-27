@@ -29,17 +29,12 @@ export function AnimatedPinDemo() {
             href="https://cancerheal.co.in/index.html"
           >
             <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem]">
-              <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-slate-100">
+              <h3 className="max-w-xs pb-2 !m-0 text-2xl font-bold max-800:text-xl text-slate-100">
                 Cancer Heal
               </h3>
-              <div className="text-base !m-0 !p-0 font-normal">
-                <span className="text-slate-500 ">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
-                </span>
-              </div>
               <img
                 className="flex flex-1 w-full rounded-lg mt-4 object-contain"
-                src="https://skillsyard.com/public/images/cancer-heal-img5.png"
+                src="/src/assets/cancerHeal.png"
                 alt=""
               />
             </div>
@@ -49,17 +44,12 @@ export function AnimatedPinDemo() {
             href="https://hotelswale.com/"
           >
             <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem] ">
-              <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-slate-100">
+            <h3 className="max-w-xs pb-2 !m-0 text-2xl font-bold max-800:text-xl text-slate-100">
                 Hotelswale
               </h3>
-              <div className="text-base !m-0 !p-0 font-normal">
-                <span className="text-slate-500 ">
-                  Customizable Tailwind CSS and Framer Motion Components.
-                </span>
-              </div>
               <img
                 className="flex flex-1 w-full rounded-lg mt-4 object-contain"
-                src="https://skillsyard.com/public/images/inept-studio-show-img1.png"
+                src="/src/assets/hotelswale.png"
                 alt=""
               />
             </div>
@@ -69,17 +59,12 @@ export function AnimatedPinDemo() {
             href="https://ineptstudio.com/"
           >
             <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem] ">
-              <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-slate-100">
+            <h3 className="max-w-xs pb-2 !m-0 text-2xl font-bold max-800:text-xl text-slate-100">
                 Inept Stuio
               </h3>
-              <div className="text-base !m-0 !p-0 font-normal">
-                <span className="text-slate-500 ">
-                  Customizable Tailwind CSS and Framer Motion Components.
-                </span>
-              </div>
               <img
                 className="flex flex-1 w-full rounded-lg mt-4 object-contain"
-                src="https://skillsyard.com/public/images/inept-studio-show-img1.png"
+                src="/src/assets/ineptStudio.png"
                 alt=""
               />
             </div>

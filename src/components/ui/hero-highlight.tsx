@@ -52,14 +52,16 @@ export const HeroHighlight: React.FC<HeroHighlightProps> = ({ className }) => {
       />
       <div className="relative z-10 flex flex-col items-center gap-7">
         <div className={cn("relative z-20", className)}>
-          <div className="text-5xl max-800:text-4xl max-550:3xl">Ready to Work Together?</div>
+          <div className="text-5xl max-800:text-4xl max-550:3xl">
+            Ready to Work Together?
+          </div>
         </div>
         <div className="text-center text-[18px] text-paraColor leading-[35px] max-800:text-[16px] max-550:text-sm">
-          An interior design agency can create content that showcases its work,
-          highlights design trends, and provides educational resources for
-          clients and followers. Some potential content ideas for an interior
-          design agency. An interior design agency can create content that
-          showcases its work
+          Let's collaborate to bring your vision to life with our expertise and
+          creativity. Our team is committed to delivering innovative solutions
+          tailored to your unique needs. Partner with us and experience a
+          seamless journey to success. Together, we can achieve extraordinary
+          results.
         </div>
         <Btn heading="Contact Us" />
       </div>
