@@ -3,15 +3,15 @@ import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
 
 export default defineConfig({
+  base: "/TechEase/",
   plugins: [react()],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: 'https://digital-skills-sphere.github.io/TechEase/',
   server: {
-    host: '0.0.0.0',
+    host: "0.0.0.0",
     port: 3000,
   },
 });
