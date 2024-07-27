@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
 
@@ -62,22 +62,13 @@ export const Menu = ({
   setActive: (item: string | null) => void;
   children: React.ReactNode;
 }) => {
-  const [visible, setVisible] = useState(true); // Always visible
-
   return (
     <AnimatePresence mode="wait">
       <motion.nav
-        initial={{
-          opacity: 1,
-          y: -100,
-        }}
-        animate={{
-          y: visible ? 0 : -100,
-          opacity: visible ? 1 : 0,
-        }}
-        transition={{
-          duration: 0.2,
-        }}
+        initial={{ opacity: 1, y: -100 }}
+        animate={{ y: 0, opacity: 1 }}
+        exit={{ y: -100, opacity: 0 }}
+        transition={{ duration: 0.2 }}
         onMouseLeave={() => setActive(null)}
         className="relative rounded-full border border-transparent bg-black shadow-input flex justify-center space-x-12 px-8 py-6"
       >

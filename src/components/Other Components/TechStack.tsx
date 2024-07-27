@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import DoubleHeading from "./DoubleHeading";
 
 type StackFeature = {
   stack: string;
@@ -11,7 +10,7 @@ type TechStackProps = {
   stackName: string;
 };
 
-const TechStack: React.FC<TechStackProps> = ({ myStack, stackName }) => {
+const TechStack: React.FC<TechStackProps> = ({ myStack }) => {
   const [stack, setStack] = useState<string[]>([]);
   const [index, setIndex] = useState<number>(0);
 

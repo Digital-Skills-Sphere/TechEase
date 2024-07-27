@@ -12,7 +12,7 @@ import { GraphicHeader } from "./components/Other Components/GraphicHeader";
 import { ContactHeader } from "./components/Other Components/ContactHeader";
 
 const App: React.FC = () => {
-  const locomotiveScroll = new LocomotiveScroll();
+   new LocomotiveScroll();
   const location = useLocation();
   const curPage: string = location.pathname;
 
