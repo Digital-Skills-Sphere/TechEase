@@ -87,7 +87,7 @@ const Price: React.FC = () => {
 
   return (
     <>
-      <div className="text-center w-screen flex flex-col items-center py-[50px]  bg-white ">
+      <div className="text-center w-screen flex flex-col items-center py-[50px] bg-white max-550:px-5">
        
           <div className='flex flex-col text-black'>
             <div className='flex gap-2 items-end'>
