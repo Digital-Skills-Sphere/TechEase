@@ -22,42 +22,15 @@ const router = createBrowserRouter([
     element: <App />,
     errorElement: <ErrorPage />,
     children: [
-      {
-        path: "/",
-        element: <Home />,
-      },
-      {
-        path: "/about",
-        element: <About />,
-      },
-      {
-        path: "/projects",
-        element: <Projects />,
-      },
-      {
-        path: "/contact",
-        element: <Contact />,
-      },
-      {
-        path: "/services/web",
-        element: <Web />,
-      },
-      {
-        path: "/services/game",
-        element: <Game />,
-      },
-      {
-        path: "/services/app",
-        element: <AppDev />,
-      },
-      {
-        path: "/services/digital",
-        element: <DigitalMarketing />,
-      },
-      {
-        path: "/services/graphic",
-        element: <GraphicDesigning />,
-      },
+      { path: "/", element: <Home /> },
+      { path: "/about", element: <About /> },
+      { path: "/projects", element: <Projects /> },
+      { path: "/contact", element: <Contact /> },
+      { path: "/services/web", element: <Web /> },
+      { path: "/services/game", element: <Game /> },
+      { path: "/services/app", element: <AppDev /> },
+      { path: "/services/digital", element: <DigitalMarketing /> },
+      { path: "/services/graphic", element: <GraphicDesigning /> },
     ],
   },
 ]);
@@ -65,7 +38,11 @@ const router = createBrowserRouter([
 const Main = () => {
   const curStatus = useStatus();
 
-  return curStatus === false ? <Offline /> : <RouterProvider router={router} />;
+  return curStatus === false ? (
+    <Offline />
+  ) : (
+    <RouterProvider router={router} />
+  );
 };
 
 const rootElement = document.getElementById("root");
