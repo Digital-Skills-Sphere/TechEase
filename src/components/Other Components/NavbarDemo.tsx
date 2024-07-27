@@ -2,9 +2,12 @@ import { useState, useEffect } from "react";
 import { HoveredLink, Menu, MenuItem, ProductItem } from "../ui/navbar-menu";
 import { cn } from "../../lib/utils";
 import { MobileNav } from "./MobileNav";
+import { useLocation } from "react-router-dom";
 
 export function NavbarDemo() {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 550);
+  const location = useLocation();//
+  const currentPath = location.pathname;//
 
   useEffect(() => {
     const handleResize = () => {
@@ -17,8 +20,12 @@ export function NavbarDemo() {
     };
   }, []);
 
+  useEffect(() => {//
+    window.scrollTo({ top: 0, behavior: 'smooth' });//
+  }, [currentPath]);//
+
   return (
-    <div className="relative w-full h-full flex items-center justify-center ">
+    <div className="relative w-full h-full flex items-center justify-center">
       {isMobile ? <MobileNav /> : <Navbar />}
     </div>
   );
@@ -26,6 +33,7 @@ export function NavbarDemo() {
 
 function Navbar({ className }: { className?: string }) {
   const [active, setActive] = useState<string | null>(null);
+
   return (
     <div
       className={cn(
@@ -34,8 +42,8 @@ function Navbar({ className }: { className?: string }) {
       )}
     >
       <Menu setActive={setActive}>
-        <HoveredLink path="/">Home</HoveredLink>
-        <HoveredLink path="/about">About</HoveredLink>
+        <HoveredLink path="/" onClick={() => setActive(null)}>Home</HoveredLink>
+        <HoveredLink path="/about" onClick={() => setActive(null)}>About</HoveredLink>
         <MenuItem setActive={setActive} active={active} item="Services">
           <div className="text-sm grid grid-cols-2 gap-10 p-4">
             <ProductItem
@@ -75,7 +83,7 @@ function Navbar({ className }: { className?: string }) {
             />
           </div>
         </MenuItem>
-        <HoveredLink path="/contact">Contact</HoveredLink>
+        <HoveredLink path="/contact" onClick={() => setActive(null)}>Contact</HoveredLink>
       </Menu>
     </div>
   );
